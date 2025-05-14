@@ -507,7 +507,7 @@ class View(object):
 
     def fn_toggle_about(self):
         """关于应用"""
-        messagebox.showinfo("关于应用", "关于应用\nPythub Builder 1.0")
+        messagebox.showinfo("关于应用", "关于应用\nPythub Builder 1.1.0")
 
 
 if __name__ == "__main__":
