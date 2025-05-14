@@ -1,6 +1,6 @@
 #!/bin/bash
 
-appName="PyThub PyInstaller Desktop"
+appName="PythubBuilder"
 # MacDeveloperID="3rd Party Mac Developer Installer: Developer Name (XXXX)"
 MacDeveloperID="Developer ID Installer: CROGRAM INC. (4LWSS9P873)"
 

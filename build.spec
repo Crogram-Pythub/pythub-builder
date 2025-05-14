@@ -1,13 +1,13 @@
 # -*- mode: python ; coding: utf-8 -*-
 
 block_cipher = None
-APP_ID = 'org.pythub.pyinstaller-desktop'
-APP_NAME = 'PyInstaller Desktop'
-APP_NAME_DISPLAY = 'PyInstaller 桌面客户端'
-APP_APP = 'PyThub PyInstaller Desktop.app'
-APP_VERSION = '1.0.0'
-APP_BUILD = 1
-APP_COPYRIGHT = 'Copyright © 2020-present Jackson Dou All Rights Reserved.'
+APP_ID = 'org.pythub.builder'
+APP_NAME = 'Pythub Builder'
+APP_NAME_DISPLAY = 'Pythub Builder'
+APP_APP = 'PythubBuilder.app'
+APP_VERSION = '1.1.0'
+APP_BUILD = 11
+APP_COPYRIGHT = 'Copyright © 2025 Crogram All Rights Reserved.'
 # HIDDEN_IMPORTS = ['PyInstaller.__main__']  # 源文件的依赖模块
 EXCLUDES = ['altgraph', 'numpy', 'psutil', 'wheel', 'setuptools', 'PIL']  # 不需要打包的模块
 UPX = True  # 如果有UPX安装(执行Configure.py时检测),会压缩执行文件(Windows系统中的DLL也会)
@@ -61,7 +61,7 @@ app = BUNDLE(coll,
         'CFBundleExecutable': APP_NAME,
         'CFBundlePackageType': 'APPL',
         'CFBundleSupportedPlatforms': ['MacOSX'],
-        'CFBundleGetInfoString': 'Jackson Dou',
+        'CFBundleGetInfoString': 'CROGRAM INC.',
         'CFBundleIdentifier': APP_ID,
         'CFBundleShortVersionString': APP_VERSION,
         'CFBundleVersion': APP_BUILD,

@@ -1,24 +1,32 @@
 # -*- coding: utf-8 -*-
 
-from tkinter import Tk
+import tkinter as tk
+from tkinter import ttk
 
-from utils import set_window_center
+from multiprocessing import Process, freeze_support
+
 from view import View
 
-class App(Tk):
-    '''
-    App
+def run():
+    app = tk.Tk()
+    app.title("Pythub Builder 1.1.0")
 
-    应用程序主窗体，所有窗口、组件的根级窗口
-    '''
+    # 配置根窗口网格布局
+    app.grid_columnconfigure(0, weight=1)
+    app.grid_rowconfigure(0, weight=1)
 
-    def __init__(self):
-        Tk.__init__(self)
-        self.title('PyInstaller Desktop')
-        View(self)
-        set_window_center(self)
-        self.mainloop()
+    # 样式配置
+    # app_style = ttk.Style()
+    # app_style.configure("TButton", padding=6)
+    # app_style.configure("TLabel", padding=3)
+    # app_style.configure("TEntry", padding=3)
+
+    View(app)
+    # set_window_center(app)
+    app.mainloop()
 
 
-if __name__ == '__main__':
-    App()
+if __name__ == "__main__":
+    freeze_support()
+    run()
+    # Process(target=run).start()
